@@ -1,0 +1,109 @@
+html, body, pre, code, kbd, samp {
+    font-family: "Press Start 2P", cursive;
+    cursor:auto;
+}
+
+/* Reset some default styling */
+ul, li {
+    margin: 0;
+    margin-bottom: 10px; 
+    padding: 10px;
+    list-style:none;
+    z-index: 99999999999;
+    cursor: pointer;
+}
+
+/* Style the main menu bar */
+ul[role="menu-bar"] {
+    display:flex;
+    background-color: rgb(243, 243, 243);
+}
+
+ul[role="menu-bar"] > li {
+    position: relative;
+    flex: 0;
+    text-align: right;
+}
+
+ul[role="menu-bar"] > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the dropdown menus */
+ul[role="menu"] {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+ul[role="menu"] > li {
+    text-align: left;
+}
+
+ul[role="menu"] > li > a {
+    padding: 10px;
+    display: block;
+    color: #1e1e1e;
+    text-decoration: none;
+}
+
+/* Show dropdowns on hover */
+ul[role="menu-bar"] > li:hover > ul[role="menu"] {
+    display: block;
+}
+
+/* Add some styling to dividers */
+ul[role="menu"] > li.divider > a {
+    border-top: 1px solid #555;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #bbb;
+}
+
+#aboutMain{
+    margin: 30px;
+    width: max-content;
+}
+
+@media (max-width: 768px) {
+    ul[role="menu-bar"] {
+        flex-direction: column;
+        cursor: default;
+    }
+
+    ul[role="menu-bar"] > li {
+        text-align: center;
+    }
+
+    ul[role="menu-bar"] > li > ul[role="menu"] {
+        position: static;
+        display: none;
+    }
+
+    ul[role="menu-bar"] > li:hover > ul[role="menu"] {
+        display: none;
+    }
+
+    /* Hide dropdowns on mobile and make the main tabs clickable */
+    ul[role="menu-bar"] > li > ul[role="menu"] {
+        display: none;
+    }
+
+    ul[role="menu-bar"] > li > a {
+        cursor: pointer;
+    }
+
+    ul[role="menu-bar"] > li > a:hover {
+        background-color: #555;
+    }
+}
+
+
+#harjotSingh{
+    margin-top: 20vh;
+}
