@@ -70,7 +70,7 @@ ul[role="menu"] > li.divider > a {
     width: max-content;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     ul[role="menu-bar"] {
         flex-direction: column;
         cursor: default;
@@ -101,9 +101,11 @@ ul[role="menu"] > li.divider > a {
     ul[role="menu-bar"] > li > a:hover {
         background-color: #555;
     }
+
+    #aboutMain{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
 }
 
-
-#harjotSingh{
-    margin-top: 20vh;
-}
