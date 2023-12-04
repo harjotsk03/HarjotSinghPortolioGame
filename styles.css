@@ -1,24 +1,109 @@
+@font-face {
+    font-family: mainRegular;
+    src: url(./PrimeformProDemo-SemiBold.otf);
+}
+@font-face {
+    font-family: mainLight;
+    src: url(./PrimeformProDemo-Light.otf);
+}
+@font-face {
+    font-family: mainBold;
+    src: url(./PrimeformProDemo-Bold.otf);
+}
+@font-face {
+    font-family: mainRegular1;
+    src: url(./PrimeformProDemo-Regular.otf);
+}
+
+* {
+    margin: 0;
+}
+
 nav {
-    background-color: lightgray;
-    padding: 20px;
     text-align: center;
-    flex: 1;
+    padding: 20px;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-family: mainRegular;
+    font-size: 20px;
+    margin: 30px 60px 30px 40px;
 }
 
 nav a {
-    font-size: 20px;
     color: #1e1e1e;
     text-decoration: none;
-    display: inline-block;
-    width: calc(100% / 5); /* Adjust the number based on the number of links */
+    transition: color 0.4s ease, transform 0.5s ease; /* Add transform property */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: inline-block; /* Needed for vertical alignment */
+}
+
+nav #active {
+    color: #3875bb;
+    font-family: mainBold;
 }
 
 nav a:hover {
-    font-size: 20px;
-    color: #1e1e1e;
-    text-decoration: none;
+    color: #3781DB;
+    transform: translateY(-5px); /* Adjust the value to control the upward movement */
 }
 
-#aboutMain{
-    margin: 30px;
+
+#name{
+    color: #4C5F75;
+    text-decoration: none;
+    font-family: mainRegular;
+    font-size: 20px;
+    float: left;
+    margin: 30px 40px 30px 60px;
+    transform: translateY(0px); /* Adjust the value to control the upward movement */
+
+}
+
+.main-wrapper {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+#mainContainer {    
+    margin-right: 0px; /* Adjust the margin as needed */
+    height: max-content;
+    width: 30%;
+}
+
+#nameMain {
+    font-family: mainBold;
+    font-size: 150px;
+    line-height: 130px;
+    letter-spacing: 0px;
+}
+
+#textMain{
+    columns: #1e1e1e;
+    font-family: mainRegular1;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+    transition: transform 0.5s ease; /* Add transform property */
+}
+
+#textMain:hover {
+    transform: translateX(10px); /* Adjust the value to control the rightward movement */
+}
+
+#imageContainer {
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+#imageContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
 }

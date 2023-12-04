@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
         <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
         
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <button type="button"><a href="index.html">Home</a></button>
+            <button type="button"><a href="about.html">About</a></button>
+            <button type="button"><a href="projects.html" id="active">Projects</a></button>
+            <button type="button"><a href="contact.html">Contact</a></button>
+          </nav>
 
-        <div class="nes-container with-title is-centered" id="aboutMain">
-            <p class="title">projects page</p>
-            <p>welcome to the projects page</p>
-        </div>
     </body>
 </html>
 
 
 <script>
-  function goToHomePage(page) {
-      // Replace 'target-page.html' with the actual path to your target page
-      window.location.href = `${page}.html`;
-  }
+
 </script>

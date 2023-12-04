@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
         <link href="styles.css" rel="stylesheet" />
-        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
       
         <nav>
-          <a href="index.html">home</a>
-          <a href="about.html">about</a>
-          <a href="projects.html">projects</a>
-          <a href="contact.html">contact</a>
+          <button type="button"><a href="index.html" id="active">HOME</a></button>
+          <button type="button"><a href="about.html">ABOUT</a></button>
+          <button type="button"><a href="projects.html">PROJECTS</a></button>
+          <button type="button"><a href="contact.html">CONTACT</a></button>
         </nav>
 
-        <div class="nes-container with-title is-centered" id="homeMain">
-            <p id="mainText">welcome to my portfolio</p>
+
+        <div class="main-wrapper">
+            <div id="mainContainer"
+                data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    <div id="nameMain">
+                        Harjot <br> <span style="font-style: italic; color: #4b8fdd;">Singh</span>
+                    </div>
+                    <div id="textMain">
+                        I'm Harjot, an application designer and developer
+                         with a knack for turning problems 
+                        and opportunities into user-driven strategic solutions with delightful 
+                        and intuitive interface design. Currently, studying at Simon Fraser University. 
+                    </div>
+            </div>
+        
+            <div id="imageContainer"
+                data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-delay="0"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false">
+
+                    <img src="./imageForSiteEdit.png">
+
+            </div>
         </div>
+        
 
+        
         
 
         
 
+        
 
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
 
-
-<script>
-  function goToHomePage(page) {
-      // Replace 'target-page.html' with the actual path to your target page
-      window.location.href = `${page}.html`;
-  }
-</script>
